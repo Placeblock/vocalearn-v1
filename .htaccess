@@ -1,0 +1,6 @@
+AuthUserFile /home/strato/www/we/www.weglehner.info/htdocs/felix/tests/.htpasswd
+AuthGroupFile /dev/null
+AuthName PlaceblockHD
+AuthType Basic
+require valid-user
+Options +Indexes

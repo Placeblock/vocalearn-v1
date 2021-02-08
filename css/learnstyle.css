@@ -1,0 +1,80 @@
+body {
+    position: relative;
+}
+
+
+
+#learn-container {
+    width: 60%;
+    position: relative;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 10px;
+}
+
+#vocable-container {
+    margin: 15px;
+    width: 60%;
+    height: 30vh;
+    min-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    transition: all .5s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+#tick-cross-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.tick-cross-button {
+    width: 35%;
+}
+
+.vocable-inner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    transform: rotateX(0deg);
+    flex-direction: column;
+}
+
+#vocable-front {
+    z-index: 2;
+    backface-visibility: hidden;
+    word-break: break-word !important;
+}
+
+#vocable-back {
+    z-index: 1;
+    transform: perspective(600px) rotateY(180deg);
+    word-break: break-word !important;
+}
+
+
+
+
+@media (max-aspect-ratio: 1/1) {
+    #learn-container {
+        width: 100%;
+    }
+
+    #vocable-container {
+        width: 80%;
+    }
+}

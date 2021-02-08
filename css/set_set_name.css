@@ -1,0 +1,98 @@
+body {
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#title {
+    font-size: 30px;
+    width: 40%;
+    background-color: var(--bg-color);
+    box-shadow: 0 0 5px var(--color-1),
+                0 0 25px var(--color-1),
+                0 0 50px var(--color-1),
+                0 0 200px var(--color-1);
+    border: 5px solid var(--color-1);
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+form {
+    width: 50%;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form input[type="text"], input[type="submit"] {
+    width: 70%;
+    height: 50px;
+    margin: 20px;
+    background-color: var(--bg-color);
+    box-shadow: 0 0 5px var(--color-1),
+                0 0 25px var(--color-1),
+                0 0 50px var(--color-1),
+                0 0 200px var(--color-1);
+    border: 5px solid var(--color-1);
+    border-radius: 30px;
+    font-size: 30px;
+    text-align: center;
+    color: var(--color-1);
+}
+
+form input[type="submit"] {
+    width: 45%;
+}
+
+#container {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    box-shadow: 0 0 5px var(--color-2),
+                0 0 25px var(--color-2),
+                0 0 50px var(--color-2),
+                0 0 200px var(--color-2);
+    border: 5px solid var(--color-2);
+    border-radius: 30px;
+}
+
+
+@media (max-aspect-ratio: 1/1) {
+
+    #title {
+        width: 90%;
+        font-size: 80px;
+    }
+
+    form {
+        width: 100%;
+        font-size: 70px;
+    }
+
+    form input[type="text"] {
+        width: 90%;
+        height: 120px;
+        box-shadow: none;
+    }
+
+    form input[type="submit"] {
+        width: 60%;
+        height: 120px;
+        box-shadow: none;
+    }
+
+    #container {
+        width: 90%;
+        box-shadow: none;
+    }
+
+}

@@ -1,0 +1,31 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-aspect-ratio: 4/3) {
+    #search-container {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        width: 60%;
+        border: 3px solid rgb(0, 132, 255);
+        border-radius: 3px;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    #result-container {
+        overflow-y: auto;
+    }
+}
+
+
+@media (max-aspect-ratio: 4/3) {
+
+    #result-container {
+        overflow-y: auto;
+    }
+}

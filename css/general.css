@@ -1,0 +1,29 @@
+
+:root {
+    --bg-color: #010615;
+    --text-color: white;
+    --color-1: #ff00ff;
+    --color-2: #00bcd4;
+    --color-3: #89ff00;
+}
+
+body {
+    position: fixed;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg-color);
+    font-family: consolas;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
